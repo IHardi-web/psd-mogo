@@ -1,0 +1,41 @@
+$roboto: "Roboto";
+$montserrat: "Montserrat";
+$kaushan: "Kaushan Script";
+
+// Roboto
+@font-face {
+  font-family: $roboto;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: $roboto;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+// Montserrat
+@font-face {
+  font-family: $montserrat;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: $montserrat;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+// Kaushan
+@font-face {
+  font-family: $kaushan;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Kaushan_Script/KaushanScript-Regular.ttf);
+}
