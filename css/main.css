@@ -98,7 +98,10 @@ body {
 }
 
 .nav__item {
+  display: inline-block;
   margin: 0 25px;
+  -webkit-transition: .3s;
+  transition: .3s;
   position: relative;
 }
 
@@ -109,6 +112,8 @@ body {
   height: 3px;
   background: #fce38a;
   opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
   position: absolute;
   left: 0;
   bottom: -12px;
