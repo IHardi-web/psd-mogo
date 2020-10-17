@@ -5,6 +5,7 @@
 $yellow: #fce38a;
 $orange: #f38181;
 $grey-1: #333;
+$grey-2: #999;
 
 @mixin line {
   content: "";
@@ -18,6 +19,7 @@ body {
   font-size: 14px;
   line-height: 1.2;
   font-family: $montserrat; 
+  color: $grey-1;
 }
 
 .container {
@@ -177,4 +179,41 @@ body {
       }
     }
   }
+}
+
+.section {
+  padding: 120px 0;
+
+  &__suptitle {
+    font-family: $kaushan;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 10px 0 90px;
+
+    &:after {
+      @include line();
+      background: $orange;
+      margin-top: 40px;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+}
+
+.text {
+  font-family: $roboto;
+  font-size: 15px;
+  color: $grey-2;
 }
