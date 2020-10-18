@@ -44,6 +44,20 @@ img {
 
 @font-face {
   font-family: "Montserrat";
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Montserrat";
   font-weight: 700;
   font-style: normal;
   src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
@@ -389,5 +403,44 @@ body {
 .statistics__title {
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.service__image {
+  display: block;
+  margin-right: 28px;
+}
+
+.service__content {
+  width: 280px;
+}
+
+.service__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.service:not(:first-of-type) {
+  margin-top: 50px;
+  padding-top: 50px;
+  border-top: 1px solid #e5e5e5;
 }
 /*# sourceMappingURL=main.css.map */

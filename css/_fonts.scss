@@ -27,6 +27,20 @@ $kaushan: "Kaushan Script";
 
 @font-face {
   font-family: $montserrat;
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: $montserrat;
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: $montserrat;
   font-weight: 700;
   font-style: normal;
   src: url(../fonts/Montserrat/Montserrat-Bold.ttf);

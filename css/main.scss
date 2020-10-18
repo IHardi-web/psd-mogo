@@ -313,3 +313,34 @@ body {
     text-transform: uppercase;
   }
 }
+
+.service {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    display: flex;
+    align-items: start;
+  }
+
+  &__image {
+    display: block;
+    margin-right: 28px;
+  }
+
+  &__content {
+    width: 280px;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid #e5e5e5;
+  }
+}
