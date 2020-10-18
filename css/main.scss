@@ -266,13 +266,46 @@ body {
     font-weight: 700;
     text-align: center;
     opacity: 0;
-
     position: absolute;
     top: 50%;
     left: 0;
     z-index: 2;
     transform: translate3d(0, -50%, 0);
-
     transition: .3s;
+  }
+}
+
+.statistics {
+  background: $blue;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 260px;
+    overflow: hidden;
+  }
+
+  &__item {
+    border-right: 1px solid #b5eae0;
+    width: 240px;
+    margin: 0 auto;
+    padding: 90px 0;
+    text-align: center;
+    color: #fff;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__number {
+    font-size: 72px;
+    line-height: 1.4;
+  }
+
+  &__title {
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }
