@@ -416,6 +416,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 0 30px;
 }
 
 .service__item {
@@ -425,15 +426,14 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 .service__image {
   display: block;
   margin-right: 28px;
-}
-
-.service__content {
-  width: 280px;
 }
 
 .service__title {

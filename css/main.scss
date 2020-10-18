@@ -321,19 +321,17 @@ body {
 .service {
   display: flex;
   justify-content: space-between;
+  padding: 0 30px;
 
   &__item {
     display: flex;
     align-items: start;
+    flex: 1 1 0;
   }
 
   &__image {
     display: block;
     margin-right: 28px;
-  }
-
-  &__content {
-    width: 280px;
   }
 
   &__title {
