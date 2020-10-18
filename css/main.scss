@@ -223,6 +223,11 @@ body {
     max-width: 950px;
     margin: 0 auto 100px;
   }
+
+  &--devices {
+    background: url(../images/section_3/background.png) top / cover no-repeat;
+    height: 1000px;
+  }
 }
 
 .text {
@@ -345,9 +350,4 @@ body {
     padding-top: 50px;
     border-top: 1px solid #e5e5e5;
   }
-}
-
-.design {
-  background: url(../images/section_3/background.png) top / cover no-repeat;
-  height: 1000px;
 }

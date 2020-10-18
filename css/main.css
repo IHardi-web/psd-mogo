@@ -304,6 +304,11 @@ body {
   margin: 0 auto 100px;
 }
 
+.section--devices {
+  background: url(../images/section_3/background.png) top/cover no-repeat;
+  height: 1000px;
+}
+
 .text {
   font-family: "Roboto";
   font-size: 15px;
@@ -446,10 +451,5 @@ body {
   margin-top: 50px;
   padding-top: 50px;
   border-top: 1px solid #e5e5e5;
-}
-
-.design {
-  background: url(../images/section_3/background.png) top/cover no-repeat;
-  height: 1000px;
 }
 /*# sourceMappingURL=main.css.map */
