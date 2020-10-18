@@ -4,6 +4,7 @@
 
 $yellow: #fce38a;
 $orange: #f38181;
+$blue: #95e1d3;
 $grey-1: #333;
 $grey-2: #999;
 
@@ -13,6 +14,10 @@ $grey-2: #999;
   width: 60px;
   height: 3px;
   margin: 0 auto;
+}
+
+@mixin gradient {
+  background: linear-gradient(to bottom, $orange, $yellow);
 }
 
 body {
@@ -208,7 +213,7 @@ body {
     text-align: center;
     width: 100%;
     max-width: 950px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
   }
 }
 
@@ -216,4 +221,58 @@ body {
   font-family: $roboto;
   font-size: 15px;
   color: $grey-2;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    background: $blue;
+    width: 380px;
+    position: relative;
+
+    &:hover {
+
+      .card__image {
+        transform: translate(-10px, -10px);
+
+        img {
+          opacity: .1;
+        }
+        
+      }
+
+      .card__text {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image {
+    @include gradient();
+    transition: .3s;
+
+      img {
+        transition: .3s;
+      }
+  }
+
+  &__text {
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: .3s;
+  }
 }
