@@ -133,6 +133,10 @@ body {
   position: relative;
 }
 
+.nav__item:first-child, .nav__item:last-child {
+  margin: 0;
+}
+
 .nav__item:after {
   content: "";
   display: block;

@@ -71,6 +71,10 @@ body {
     transition: .3s;
     position: relative;
 
+    &:first-child, &:last-child {
+      margin: 0;
+    }
+
     &:after {
       content: "";
       display: block;
