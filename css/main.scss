@@ -20,6 +20,10 @@ $grey-2: #999;
   background: linear-gradient(to bottom, $orange, $yellow);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 14px;
   line-height: 1.2;
