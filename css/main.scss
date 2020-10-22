@@ -8,6 +8,8 @@ $blue: #95e1d3;
 $grey-1: #333;
 $grey-2: #999;
 $grey-3: #e5e5e5;
+$grey-4: #f8f8f8;
+$grey-5: #ccc;
 
 @mixin line {
   content: "";
@@ -214,6 +216,11 @@ body {
     max-width: 950px;
     margin: 0 auto 100px;
   }
+
+  &--light {
+    background-color: $grey-4;
+    padding: 70px 0;
+  }
 }
 
 .text {
@@ -416,6 +423,66 @@ body {
 
     .accordion__arrow {
       transform: rotate(0deg);
+    }
+  }
+}
+
+.arrow {
+  &--left {
+    transform: rotate(-90deg);
+  }
+
+  &--right {
+    transform: rotate(90deg);
+  }
+}
+
+.carousel {
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 150px;
+    height: 150px;
+
+    &--speech {
+      border: 3px solid $blue;
+      padding: 40px;
+    }
+  }
+
+  &__content {
+    margin-left: 60px;
+    font-size: 24px;
+  }
+
+  &__quote {
+    color: $grey-2;
+    font-weight: 300;
+    font-family: $roboto;
+    font-style: italic;
+    margin-bottom: 20px;
+
+    &-author {
+      font-family: $kaushan;
+      position: relative;
+      margin-left: 70px;
+
+      &:before {
+        @include line();
+        background: $orange;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: -70px;
+      }
     }
   }
 }

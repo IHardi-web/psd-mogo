@@ -299,6 +299,11 @@ body {
   margin: 0 auto 100px;
 }
 
+.section--light {
+  background-color: #f8f8f8;
+  padding: 70px 0;
+}
+
 .text {
   font-family: "Roboto";
   font-size: 15px;
@@ -531,5 +536,77 @@ body {
 .accordion .active .accordion__arrow {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+
+.arrow--left {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.arrow--right {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.carousel {
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.carousel__item {
+  padding: 0 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel__image {
+  width: 150px;
+  height: 150px;
+}
+
+.carousel__image--speech {
+  border: 3px solid #95e1d3;
+  padding: 40px;
+}
+
+.carousel__content {
+  margin-left: 60px;
+  font-size: 24px;
+}
+
+.carousel__quote {
+  color: #999;
+  font-weight: 300;
+  font-family: "Roboto";
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.carousel__quote-author {
+  font-family: "Kaushan Script";
+  position: relative;
+  margin-left: 70px;
+}
+
+.carousel__quote-author:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: #f38181;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: -70px;
 }
 /*# sourceMappingURL=main.css.map */
