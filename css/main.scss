@@ -541,9 +541,10 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   &__item {
-    width: 110px;
+    height: 110px;
     object-fit: contain;
     transition: .6s;
   
