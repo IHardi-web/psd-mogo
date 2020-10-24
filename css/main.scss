@@ -53,6 +53,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
+    min-height: 750px;
   }
 
   
@@ -83,6 +84,17 @@ body {
     text-transform: uppercase;
     transition: .3s;
     position: relative;
+
+    &--icon {
+      width: 18px;
+      height: 18px;
+      fill: #fff;
+      transition: .3s;
+
+      &:hover {
+        fill: $yellow;
+      }
+    }
 
     &:after {
       content: "";
@@ -246,7 +258,6 @@ body {
         img {
           opacity: .1;
         }
-        
       }
 
       .card__text {
@@ -278,6 +289,11 @@ body {
     z-index: 2;
     transform: translate3d(0, -50%, 0);
     transition: .3s;
+
+    &--icon {
+      width: 32px;
+      height: 23px;
+    }
   }
 }
 
@@ -384,7 +400,6 @@ body {
   }
 
   &__title {
-    border-bottom: 1px solid $grey-3;
     height: 58px;
     padding: 15px;
     text-transform: uppercase;
@@ -416,6 +431,9 @@ body {
   }
 
   .active {
+    .accordion__title {
+      border-bottom: 1px solid $grey-3;
+    }
     .accordion__text {
       display: block;
       max-height: 180px;
@@ -486,3 +504,37 @@ body {
     }
   }
 }
+
+.social {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    padding: 15px;
+    background: $yellow;
+    display: inline-flex;
+    transition: .3s;
+    border-right: 1px solid #f9bd87;
+    
+    &:last-child {
+      border: none;
+    }
+
+    &:hover {
+      background: $orange;
+
+      .social__icon {
+        fill:#fff;
+      }
+    }
+    
+  }
+
+  &__icon {
+    width: 26px;
+    height: 26px;
+    fill: $orange;
+    transition: .3s;
+  }
+}
+
