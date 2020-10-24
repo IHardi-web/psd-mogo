@@ -527,7 +527,6 @@ body {
         fill:#fff;
       }
     }
-    
   }
 
   &__icon {
@@ -538,3 +537,18 @@ body {
   }
 }
 
+.logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 110px;
+    object-fit: contain;
+    transition: .6s;
+  
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

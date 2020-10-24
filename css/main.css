@@ -670,4 +670,27 @@ body {
   -webkit-transition: .3s;
   transition: .3s;
 }
+
+.logos {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logos__item {
+  width: 110px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.logos__item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 /*# sourceMappingURL=main.css.map */
