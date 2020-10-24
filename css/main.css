@@ -333,7 +333,6 @@ body {
 }
 
 .card__item {
-  background: #95e1d3;
   width: 380px;
   position: relative;
 }
@@ -349,6 +348,10 @@ body {
 
 .card__item:hover .card__text {
   opacity: 1;
+}
+
+.card__inner {
+  background: #95e1d3;
 }
 
 .card__image {
@@ -384,6 +387,25 @@ body {
 .card__text--icon {
   width: 32px;
   height: 23px;
+}
+
+.card__info {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.card__name {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.card__profession {
+  color: #999;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
 }
 
 .statistics {

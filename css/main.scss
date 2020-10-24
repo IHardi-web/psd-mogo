@@ -246,12 +246,10 @@ body {
   justify-content: space-between;
 
   &__item {
-    background: $blue;
     width: 380px;
     position: relative;
 
     &:hover {
-
       .card__image {
         transform: translate(-10px, -10px);
 
@@ -264,6 +262,10 @@ body {
         opacity: 1;
       }
     }
+  }
+
+  &__inner {
+    background: $blue;
   }
 
   &__image {
@@ -294,6 +296,25 @@ body {
       width: 32px;
       height: 23px;
     }
+  }
+
+  &__info {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  &__name {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  &__profession {
+    color: $grey-2;
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: 15px;
+    font-style: italic;
   }
 }
 
