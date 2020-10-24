@@ -163,10 +163,6 @@ body {
   transition: .3s;
 }
 
-.nav__item--icon:hover {
-  fill: #fce38a;
-}
-
 .nav__item:after {
   content: "";
   display: block;
@@ -187,6 +183,10 @@ body {
 
 .nav__item:hover:after, .nav__item.active:after {
   opacity: 1;
+}
+
+.nav__item:hover .nav__item--icon, .nav__item.active .nav__item--icon {
+  fill: #fce38a;
 }
 
 .intro {

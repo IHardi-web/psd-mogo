@@ -90,10 +90,6 @@ body {
       height: 18px;
       fill: #fff;
       transition: .3s;
-
-      &:hover {
-        fill: $yellow;
-      }
     }
 
     &:after {
@@ -114,6 +110,10 @@ body {
 
       &:after {
         opacity: 1;
+      }
+
+      .nav__item--icon {
+        fill: $yellow;
       }
     }
   }
