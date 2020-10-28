@@ -332,26 +332,22 @@ body {
           justify-content: space-between;
 }
 
-.card__item {
-  width: 380px;
+.card__inner {
   position: relative;
+  background: #95e1d3;
 }
 
-.card__item:hover .card__image {
+.card__inner:hover .card__image {
   -webkit-transform: translate(-10px, -10px);
           transform: translate(-10px, -10px);
 }
 
-.card__item:hover .card__image img {
+.card__inner:hover .card__image img {
   opacity: .1;
 }
 
-.card__item:hover .card__text {
+.card__inner:hover .card__text {
   opacity: 1;
-}
-
-.card__inner {
-  background: #95e1d3;
 }
 
 .card__image {
@@ -382,11 +378,6 @@ body {
           transform: translate3d(0, -50%, 0);
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-.card__text--icon {
-  width: 32px;
-  height: 23px;
 }
 
 .card__info {
@@ -546,6 +537,9 @@ body {
 
 .accordion__image {
   margin-right: 15px;
+  fill: #95e1d3;
+  width: 30px;
+  height: 30px;
 }
 
 .accordion__arrow {
@@ -654,12 +648,9 @@ body {
 }
 
 .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 .social__item {
@@ -717,5 +708,71 @@ body {
 .logos__item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+.portfolio__item {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
+  background: linear-gradient(to bottom, #f38181, #fce38a);
+  position: relative;
+}
+
+.portfolio__item:hover .portfolio__image {
+  opacity: 0.1;
+}
+
+.portfolio__item:hover .portfolio__info {
+  opacity: 1;
+}
+
+.portfolio__image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.portfolio__info {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.portfolio__icon {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.portfolio__title {
+  text-transform: uppercase;
+  margin: 15px 0 10px;
+}
+
+.portfolio__text {
+  font-family: "Roboto";
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
 }
 /*# sourceMappingURL=main.css.map */

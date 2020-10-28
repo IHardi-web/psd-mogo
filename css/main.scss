@@ -245,9 +245,9 @@ body {
   display: flex;
   justify-content: space-between;
 
-  &__item {
-    width: 380px;
+  &__inner {
     position: relative;
+    background: $blue;
 
     &:hover {
       .card__image {
@@ -262,10 +262,6 @@ body {
         opacity: 1;
       }
     }
-  }
-
-  &__inner {
-    background: $blue;
   }
 
   &__image {
@@ -291,11 +287,6 @@ body {
     z-index: 2;
     transform: translate3d(0, -50%, 0);
     transition: .3s;
-
-    &--icon {
-      width: 32px;
-      height: 23px;
-    }
   }
 
   &__info {
@@ -432,6 +423,9 @@ body {
 
   &__image {
     margin-right: 15px;
+    fill: $blue;
+    width: 30px;
+    height: 30px;
   }
 
   &__arrow {
@@ -527,8 +521,7 @@ body {
 }
 
 .social {
-  display: flex;
-  justify-content: center;
+  display: inline-flex;
 
   &__item {
     padding: 15px;
@@ -572,5 +565,65 @@ body {
     &:hover {
       transform: scale(1.2);
     }
+  }
+}
+
+.portfolio {
+  display: flex;
+
+  &__column {
+    flex: 1 1 0;
+  }
+  
+  &__item {
+    @include gradient();
+    position: relative;
+
+    &:hover {
+      .portfolio__image {
+        opacity: 0.1;
+      }
+
+      .portfolio__info {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: .3s;
+  }
+
+  &__info {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate3d(0, -50%, 0);
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: .3s;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    margin: 15px 0 10px;
+  }
+
+  &__text {
+    font-family: $roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
   }
 }
