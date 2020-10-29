@@ -613,6 +613,7 @@ body {
 .carousel__image {
   width: 210px;
   height: 210px;
+  border-radius: 50%;
 }
 
 .carousel__image--speech {
@@ -817,6 +818,7 @@ body {
   margin-right: 30px;
   width: 110px;
   height: 110px;
+  border-radius: 50%;
 }
 
 .clients__name {
