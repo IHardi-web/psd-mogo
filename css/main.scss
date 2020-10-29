@@ -600,6 +600,7 @@ body {
   &__image {
     display: block;
     max-width: 100%;
+    width: 100vw;
     height: auto;
     transition: .3s;
   }

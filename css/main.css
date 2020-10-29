@@ -746,6 +746,7 @@ body {
 .portfolio__image {
   display: block;
   max-width: 100%;
+  width: 100vw;
   height: auto;
   -webkit-transition: .3s;
   transition: .3s;
