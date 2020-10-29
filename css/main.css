@@ -318,12 +318,13 @@ body {
 }
 
 .section--no-space {
-  padding: 0;
+  padding-top: 0;
 }
 
 .text {
   font-family: "Roboto";
   font-size: 15px;
+  line-height: 1.5;
   color: #999;
 }
 
@@ -782,5 +783,66 @@ body {
   font-size: 15px;
   font-weight: 300;
   font-style: italic;
+}
+
+.clients {
+  background: url(../images/section_8/background.png) bottom/cover no-repeat;
+}
+
+.clients__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  padding: 35px 40px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.clients__image {
+  margin-right: 30px;
+  width: 110px;
+  height: 110px;
+}
+
+.clients__name {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 10px 0;
+  position: relative;
+}
+
+.clients__name:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: #f38181;
+  position: absolute;
+  left: 0;
+  bottom: -47px;
+}
+
+.clients__profession {
+  font-size: 15px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=main.css.map */

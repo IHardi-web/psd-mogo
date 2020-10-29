@@ -235,13 +235,14 @@ body {
   }
 
   &--no-space {
-    padding: 0;
+    padding-top: 0;
   }
 }
 
 .text {
   font-family: $roboto;
   font-size: 15px;
+  line-height: 1.5;
   color: $grey-2;
 }
 
@@ -633,6 +634,52 @@ body {
     font-size: 15px;
     font-weight: 300;
     font-style: italic;
+  }
+}
+
+.clients {
+  background: url(../images/section_8/background.png) bottom / cover no-repeat;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex: 50%;
+    padding: 35px 40px;
+    align-items: flex-start;
+  }
+
+  &__image {
+    margin-right: 30px;
+    width: 110px;
+    height: 110px;
+  }
+
+  &__name {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 10px 0;
+    position: relative;
+
+    &:after {
+      @include line();
+      background: $orange;
+      position: absolute;
+      left: 0;
+      bottom: -47px;
+    }
+  }
+
+  &__profession {
+    font-size: 15px;
+    font-family: $roboto;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 40px;
   }
 }
 
