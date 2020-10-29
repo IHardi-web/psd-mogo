@@ -317,6 +317,10 @@ body {
   padding: 70px 0;
 }
 
+.section--no-space {
+  padding: 0;
+}
+
 .text {
   font-family: "Roboto";
   font-size: 15px;
@@ -606,13 +610,15 @@ body {
 }
 
 .carousel__image {
-  width: 150px;
-  height: 150px;
+  width: 210px;
+  height: 210px;
 }
 
 .carousel__image--speech {
   border: 3px solid #95e1d3;
   padding: 40px;
+  width: 150px;
+  height: 150px;
 }
 
 .carousel__content {
@@ -626,6 +632,7 @@ body {
   font-family: "Roboto";
   font-style: italic;
   margin-bottom: 20px;
+  line-height: 1.35;
 }
 
 .carousel__quote-author {

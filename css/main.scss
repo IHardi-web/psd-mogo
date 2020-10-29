@@ -233,6 +233,10 @@ body {
     background-color: $grey-4;
     padding: 70px 0;
   }
+
+  &--no-space {
+    padding: 0;
+  }
 }
 
 .text {
@@ -482,12 +486,14 @@ body {
   }
 
   &__image {
-    width: 150px;
-    height: 150px;
+    width: 210px;
+    height: 210px;
 
     &--speech {
       border: 3px solid $blue;
       padding: 40px;
+      width: 150px;
+      height: 150px;
     }
   }
 
@@ -502,6 +508,7 @@ body {
     font-family: $roboto;
     font-style: italic;
     margin-bottom: 20px;
+    line-height: 1.35;
 
     &-author {
       font-family: $kaushan;
@@ -627,3 +634,4 @@ body {
     font-style: italic;
   }
 }
+
