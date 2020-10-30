@@ -29,8 +29,7 @@ html {
 
 body {
   font-size: 14px;
-  line-height: 1.2;
-  font-family: $montserrat; 
+  font-family: $montserrat;
   color: $grey-1;
 }
 
@@ -55,8 +54,6 @@ body {
     height: 100vh;
     min-height: 750px;
   }
-
-  
 }
 
 .nav {
@@ -70,7 +67,7 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
-    transition: .3s;
+    transition: 0.3s;
 
     &:hover {
       color: $yellow;
@@ -82,14 +79,14 @@ body {
     text-transform: uppercase;
     margin: 0 25px;
     text-transform: uppercase;
-    transition: .3s;
+    transition: 0.3s;
     position: relative;
 
     &--icon {
       width: 18px;
       height: 18px;
       fill: #fff;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     &:after {
@@ -99,13 +96,14 @@ body {
       height: 3px;
       background: $yellow;
       opacity: 0;
-      transition: .3s;
+      transition: 0.3s;
       position: absolute;
       left: 0;
       bottom: -12px;
     }
 
-    &:hover, &.active {
+    &:hover,
+    &.active {
       color: $yellow;
 
       &:after {
@@ -144,7 +142,6 @@ body {
     font-family: $kaushan;
     font-size: 72px;
   }
-
 }
 
 .button {
@@ -153,7 +150,7 @@ body {
   color: #fff;
   padding: 12px 30px;
   border: 3px solid #fff;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
     color: $grey-1;
@@ -184,7 +181,7 @@ body {
 
     &.active {
       opacity: 1;
-      
+
       &:after {
         content: "";
         width: 25%;
@@ -259,7 +256,7 @@ body {
         transform: translate(-10px, -10px);
 
         img {
-          opacity: .1;
+          opacity: 0.1;
         }
       }
 
@@ -271,11 +268,11 @@ body {
 
   &__image {
     @include gradient();
-    transition: .3s;
+    transition: 0.3s;
 
-      img {
-        transition: .3s;
-      }
+    img {
+      transition: 0.3s;
+    }
   }
 
   &__text {
@@ -291,7 +288,7 @@ body {
     left: 0;
     z-index: 2;
     transform: translate3d(0, -50%, 0);
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &__info {
@@ -327,7 +324,7 @@ body {
 
   &__item {
     border-left: 1px solid #b5eae0;
-    
+
     width: 240px;
     margin: 0 auto;
     padding: 90px 0;
@@ -436,7 +433,7 @@ body {
   &__arrow {
     margin-left: auto;
     transform: rotate(180deg);
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &__text {
@@ -447,6 +444,7 @@ body {
     font-weight: 300;
     font-style: italic;
     overflow-y: scroll;
+    line-height: 1.25;
     display: none;
   }
 
@@ -536,9 +534,9 @@ body {
     padding: 15px;
     background: $yellow;
     display: inline-flex;
-    transition: .3s;
+    transition: 0.3s;
     border-right: 1px solid #f9bd87;
-    
+
     &:last-child {
       border: none;
     }
@@ -547,7 +545,7 @@ body {
       background: $orange;
 
       .social__icon {
-        fill:#fff;
+        fill: #fff;
       }
     }
   }
@@ -556,7 +554,7 @@ body {
     width: 26px;
     height: 26px;
     fill: $orange;
-    transition: .3s;
+    transition: 0.3s;
   }
 }
 
@@ -569,8 +567,8 @@ body {
   &__item {
     height: 110px;
     object-fit: contain;
-    transition: .6s;
-  
+    transition: 0.6s;
+
     &:hover {
       transform: scale(1.2);
     }
@@ -583,7 +581,7 @@ body {
   &__column {
     flex: 1 1 0;
   }
-  
+
   &__item {
     @include gradient();
     position: relative;
@@ -604,7 +602,7 @@ body {
     max-width: 100%;
     width: 100vw;
     height: auto;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &__info {
@@ -616,7 +614,7 @@ body {
     text-align: center;
     color: #fff;
     opacity: 0;
-    transition: .3s;
+    transition: 0.3s;
   }
 
   &__icon {
@@ -685,3 +683,86 @@ body {
   }
 }
 
+.blogs {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 380px;
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+  }
+
+  &__date {
+    width: 60px;
+    height: 70px;
+    background: $blue;
+    color: #fff;
+    text-align: center;
+    padding-top: 12px;
+
+    position: absolute;
+    left: -10px;
+    bottom: 10px;
+
+    &--number {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    &--month {
+      font-family: $roboto;
+      font-weight: 300;
+      font-style: italic;
+      font-size: 15px;
+    }
+  }
+
+  &__content {
+    margin-top: 19px;
+  }
+
+  &__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__stats {
+    border-top: 1px solid $grey-3;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 7px;
+    align-self: start;
+
+    &--views {
+      width: 20px;
+      height: 12px;
+    }
+
+    &--comments {
+      width: 16px;
+      height: 15px;
+    }
+  }
+
+  &__number {
+    font-family: $roboto;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: $grey-2;
+
+    margin-right: 19px;
+  }
+}
