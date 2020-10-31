@@ -945,4 +945,61 @@ body {
   color: #999;
   margin-right: 19px;
 }
+
+.map {
+  background: url(../images/map/background.png) center/cover no-repeat;
+  padding: 57px 0;
+}
+
+.map__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.map__icon {
+  width: 20px;
+  height: 26px;
+  display: block;
+  margin: 0 auto 15px;
+  fill: #f38181;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.map__link {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f38181;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.map__link:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  margin: 0 auto;
+  background: #f38181;
+  margin-top: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.map__link:hover {
+  color: #fce38a;
+}
+
+.map__link:hover:after {
+  background: #fce38a;
+}
+
+.map__link:hover .map__icon {
+  fill: #fce38a;
+}
 /*# sourceMappingURL=main.css.map */

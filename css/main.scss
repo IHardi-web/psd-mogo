@@ -766,3 +766,49 @@ body {
     margin-right: 19px;
   }
 }
+
+.map {
+  background: url(../images/map/background.png) center / cover no-repeat;
+  padding: 57px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 20px;
+    height: 26px;
+    display: block;
+    margin: 0 auto 15px;
+    fill: $orange;
+    transition: .3s;
+  }
+
+  &__link {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $orange;
+    transition: .3s;
+
+    &:after {
+      @include line();
+      background: $orange;
+      margin-top: 18px;
+      transition: .3s;
+    }
+
+    &:hover {
+      color: $yellow;
+
+      &:after {
+        background: $yellow;
+      }
+
+      & .map__icon {
+        fill: $yellow;
+      }
+    }
+  }
+}
