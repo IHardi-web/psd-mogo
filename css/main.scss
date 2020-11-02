@@ -239,7 +239,7 @@ body {
 .text {
   font-family: $roboto;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
   color: $grey-2;
 }
 
@@ -811,4 +811,93 @@ body {
       }
     }
   }
+}
+
+.footer {
+  padding: 74px 0 70px;
+  background: $grey-4;
+
+  &__inner {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 46px;
+    color: $grey-5;
+    margin-bottom: 32px;
+  }
+
+  &__info {
+    width: 480px;
+  }
+
+  &__followers {
+    margin-top: 50px;
+    font-weight: 500;
+
+    b {
+      font-size: 18px;
+    }
+  }
+
+  &__social {
+    margin-top: 18px;
+    padding-top: 18px;
+    border-top: 1px solid $grey-3;
+
+    font-family: $roboto;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: $grey-2;
+    
+    &--icon {
+      height: 16px;
+      margin-left: 18px;
+      fill: $blue;
+      transition: .3s;
+
+      &:hover {
+        fill: $orange;   
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 40px;
+    display: flex;
+    
+    &--email {
+      width: 230px;
+      height: 40px;
+      border: 1px solid $grey-3;
+      border-right: none;
+      padding-left: 13px;
+      font-family: $roboto;
+      font-size: 15px;
+      
+      &::placeholder {
+        font-family: $roboto;
+        font-style: italic;
+        font-weight: 300;
+        color: $grey-5;
+      }
+    }
+
+    &--submit {
+      width: 150px;
+      border: 1px solid $blue;
+      padding: 0 33px;
+      background: $blue;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+
+
+
 }
