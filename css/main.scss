@@ -821,7 +821,6 @@ body {
   &__inner {
     display: flex;
     width: 100%;
-    height: 100%;
     justify-content: space-between;
   }
 
@@ -911,11 +910,8 @@ body {
   }
 
   &__instagram {
-    width: 23%;
+    width: 22.5%;
   }
-
-
-
 }
 
 .blogs {
@@ -941,6 +937,7 @@ body {
   }
 
   &__title {
+    display: block;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.5;
@@ -956,3 +953,33 @@ body {
     font-weight: 300;
   }
 }
+
+.instagram {
+  display: flex;
+  height: 270px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    display: block;
+  }
+
+  &__image {
+    width: 88px;
+    height: 88px;
+  }
+
+  &__link {
+    font-family: $roboto;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 300;
+    display: block;
+    margin-top: 20px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
