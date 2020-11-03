@@ -1009,7 +1009,7 @@ body {
 }
 
 .footer {
-  padding: 74px 0 70px;
+  padding-top: 74px;
   background: #f8f8f8;
 }
 
@@ -1021,6 +1021,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 70px;
 }
 
 .footer__info {
@@ -1207,6 +1208,27 @@ body {
 }
 
 .instagram__link:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  padding: 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px solid #e5e5e5;
+  font-weight: 600;
+}
+
+.copyright__link {
+  color: #f38181;
+  margin-left: 5px;
+}
+
+.copyright__link:hover {
   text-decoration: underline;
 }
 /*# sourceMappingURL=main.css.map */

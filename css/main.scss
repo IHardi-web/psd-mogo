@@ -815,13 +815,14 @@ body {
 }
 
 .footer {
-  padding: 74px 0 70px;
+  padding-top: 74px;
   background: $grey-4;
 
   &__inner {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-bottom: 70px;
   }
 
   &__info {
@@ -983,3 +984,19 @@ body {
   }
 }
 
+.copyright {
+  padding: 25px 0;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $grey-3;
+  font-weight: 600;
+
+  &__link {
+    color: $orange;
+    margin-left: 5px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
