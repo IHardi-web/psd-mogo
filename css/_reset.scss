@@ -3,6 +3,7 @@
 *::after {
   margin: 0;
   padding: 0;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -16,7 +17,6 @@ a {
 }
 
 button {
-  outline: none;
   background: none;
   border: none;
   cursor: pointer;
@@ -28,5 +28,4 @@ img {
 
 input {
   font-family: inherit;
-  outline: none;
 }

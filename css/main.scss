@@ -35,8 +35,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1230px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
@@ -683,7 +684,7 @@ body {
   }
 }
 
-.blogs {
+.blog {
   display: flex;
   justify-content: space-between;
 
@@ -820,17 +821,18 @@ body {
   &__inner {
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: space-between;
+  }
+
+  &__info {
+    width: 40%;
   }
 
   &__logo {
     font-size: 46px;
     color: $grey-5;
     margin-bottom: 32px;
-  }
-
-  &__info {
-    width: 480px;
   }
 
   &__followers {
@@ -855,7 +857,7 @@ body {
     
     &--icon {
       height: 16px;
-      margin-left: 18px;
+      margin-left: 1.3rem;
       fill: $blue;
       transition: .3s;
 
@@ -894,10 +896,63 @@ body {
       text-transform: uppercase;
       font-weight: 700;
       color: #fff;
+      cursor: pointer;
     }
+  }
+
+  &__title {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+
+  &__blogs {
+    width: 30%;
+  }
+
+  &__instagram {
+    width: 23%;
   }
 
 
 
+}
 
+.blogs {
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:first-of-type) {
+      margin-top: 30px;
+    }
+  }
+
+  &__image {
+    display: block;
+    width: 120px;
+    height: 80px;
+    margin-right: 20px;
+  }
+
+  &__content {
+    margin-top: 10px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    font-size: 13px;
+    color: $grey-2;
+    font-family: $roboto;
+    font-style: italic;
+    font-weight: 300;
+  }
 }
