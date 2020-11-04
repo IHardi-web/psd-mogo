@@ -379,18 +379,37 @@ body {
 .devices {
   background: url(../images/section_3/background.png) top / cover no-repeat;
   height: 85rem;
-  position: relative;
+
+  &__inner {
+    height: 73rem;
+    position: relative;
+  }
 
   &__tablet-image {
+    width: 57rem;
+    height: 62rem;
     position: absolute;
     bottom: 0;
-    left: 30%;
+    left: 34.3rem;
+    z-index: 1;
   }
 
   &__phone-image {
+    width: 27.4rem;
+    height: 47.6rem;
     position: absolute;
-    bottom: -10rem;
-    left: 53%;
+    bottom: -9.1rem;
+    left: 75rem;
+    z-index: 2;
+  }
+
+  &__item {
+    transition: .6s;
+
+    &:hover {
+      transform: translateY(-6.2rem) scale(1.2);
+      z-index: 100;
+    }
   }
 }
 
