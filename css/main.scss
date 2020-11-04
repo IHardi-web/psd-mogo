@@ -1,6 +1,5 @@
 @import "_reset";
 @import "_fonts";
-@import "_responsive";
 
 $yellow: #fce38a;
 $orange: #f38181;
@@ -14,8 +13,8 @@ $grey-5: #ccc;
 @mixin line {
   content: "";
   display: block;
-  width: 60px;
-  height: 3px;
+  width: 6rem;
+  height: .3rem;
   margin: 0 auto;
 }
 
@@ -25,25 +24,26 @@ $grey-5: #ccc;
 
 html {
   scroll-behavior: smooth;
+  font-size: 62.5%; // makes 1rem = 10px by default
 }
 
 body {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-family: $montserrat;
   color: $grey-1;
 }
 
 .container {
   width: 100%;
-  max-width: 1230px;
+  max-width: 123rem;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1.5rem;
 }
 
 .header {
   width: 100%;
   height: 100vh;
-  min-height: 750px;
+  min-height: 75rem;
   @include gradient();
   background: url("../images/header/background.png") top / cover no-repeat;
   color: #fff;
@@ -53,19 +53,19 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
-    min-height: 750px;
+    min-height: 75rem;
   }
 }
 
 .nav {
-  margin-top: 29px;
+  margin-top: 2.9rem;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   &__logo {
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 700;
     color: #fff;
     transition: 0.3s;
@@ -78,14 +78,14 @@ body {
   &__item {
     display: inline-block;
     text-transform: uppercase;
-    margin: 0 25px;
+    margin: 0 2.5rem;
     text-transform: uppercase;
     transition: 0.3s;
     position: relative;
 
     &--icon {
-      width: 18px;
-      height: 18px;
+      width: 1.8rem;
+      height: 1.8rem;
       fill: #fff;
       transition: 0.3s;
     }
@@ -94,13 +94,13 @@ body {
       content: "";
       display: block;
       width: 100%;
-      height: 3px;
+      height: .3rem;
       background: $yellow;
       opacity: 0;
-      transition: 0.3s;
+      transition: .3s;
       position: absolute;
       left: 0;
-      bottom: -12px;
+      bottom: -1.2rem;
     }
 
     &:hover,
@@ -120,28 +120,28 @@ body {
 
 .intro {
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto 30px;
+  max-width: 90rem;
+  margin: 0 auto 3rem;
   text-align: center;
 
   &__title {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 150px;
+    font-size: 15rem;
     line-height: 0.9;
-    margin: 30px 0 80px;
+    margin: 3rem 0 8rem;
     position: relative;
 
     &:after {
       @include line();
       background: #fff;
-      margin-top: 73px;
+      margin-top: 7.3rem;
     }
   }
 
   &__suptitle {
     font-family: $kaushan;
-    font-size: 72px;
+    font-size: 7.2rem;
   }
 }
 
@@ -149,8 +149,8 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
-  padding: 12px 30px;
-  border: 3px solid #fff;
+  padding: 1.2rem 3rem;
+  border: .3rem solid #fff;
   transition: 0.3s;
 
   &:hover {
@@ -160,7 +160,7 @@ body {
 }
 
 .slider {
-  margin-bottom: 25px;
+  margin-bottom: 2.5rem;
 
   &__inner {
     display: flex;
@@ -169,15 +169,15 @@ body {
 
   &__item {
     width: 24%;
-    font-size: 18px;
+    font-size: 1.8rem;
     text-transform: uppercase;
-    padding-top: 25px;
-    border-top: 3px solid #fff;
+    padding-top: 2.5rem;
+    border-top: .3rem solid #fff;
     opacity: 0.7;
     position: relative;
 
     b {
-      font-size: 24px;
+      font-size: 2.4rem;
     }
 
     &.active {
@@ -186,11 +186,11 @@ body {
       &:after {
         content: "";
         width: 25%;
-        height: 3px;
+        height: .3rem;
         position: absolute;
         background: $orange;
         left: 0;
-        top: -3px;
+        top: -0.3rem;
         z-index: 2;
       }
     }
@@ -198,38 +198,38 @@ body {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 12rem 0;
 
   &__suptitle {
     font-family: $kaushan;
     text-align: center;
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   &__title {
     text-align: center;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 3rem;
     text-transform: uppercase;
-    margin: 10px 0 90px;
+    margin: 1rem 0 9rem;
 
     &:after {
       @include line();
       background: $orange;
-      margin-top: 40px;
+      margin-top: 4rem;
     }
   }
 
   &__text {
     text-align: center;
     width: 100%;
-    max-width: 950px;
-    margin: 0 auto 100px;
+    max-width: 95rem;
+    margin: 0 auto 10rem;
   }
 
   &--light {
     background-color: $grey-4;
-    padding: 70px 0;
+    padding: 7rem 0;
   }
 
   &--no-space {
@@ -239,7 +239,7 @@ body {
 
 .text {
   font-family: $roboto;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 1.6;
   color: $grey-2;
 }
@@ -254,7 +254,7 @@ body {
 
     &:hover {
       .card__image {
-        transform: translate(-10px, -10px);
+        transform: translate(-1rem, -1rem);
 
         img {
           opacity: 0.1;
@@ -278,7 +278,7 @@ body {
 
   &__text {
     width: 100%;
-    font-size: 18px;
+    font-size: 1.8rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
@@ -293,13 +293,13 @@ body {
   }
 
   &__info {
-    margin-top: 30px;
+    margin-top: 3rem;
     text-align: center;
   }
 
   &__name {
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
     font-weight: 600;
   }
 
@@ -307,7 +307,7 @@ body {
     color: $grey-2;
     font-family: $roboto;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-style: italic;
   }
 }
@@ -319,26 +319,26 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-height: 270px;
+    max-height: 27rem;
     overflow: hidden;
   }
 
   &__item {
-    border-left: 1px solid #b5eae0;
+    border-left: .1rem solid #b5eae0;
 
-    width: 240px;
+    width: 24rem;
     margin: 0 auto;
-    padding: 90px 0;
+    padding: 9rem 0;
     text-align: center;
     color: #fff;
 
     &:last-child {
-      border-right: 1px solid #b5eae0;
+      border-right: .1rem solid #b5eae0;
     }
   }
 
   &__number {
-    font-size: 72px;
+    font-size: 7.2rem;
     line-height: 1.4;
   }
 
@@ -351,7 +351,7 @@ body {
 .service {
   display: flex;
   justify-content: space-between;
-  padding: 0 30px;
+  padding: 0 3rem;
 
   &__item {
     display: flex;
@@ -361,25 +361,25 @@ body {
 
   &__image {
     display: block;
-    margin-right: 28px;
+    margin-right: 2.8rem;
   }
 
   &__title {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     font-weight: 600;
   }
 
   &:not(:first-of-type) {
-    margin-top: 50px;
-    padding-top: 50px;
-    border-top: 1px solid $grey-3;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    border-top: .1rem solid $grey-3;
   }
 }
 
 .devices {
   background: url(../images/section_3/background.png) top / cover no-repeat;
-  height: 850px;
+  height: 85rem;
   position: relative;
 
   &__tablet-image {
@@ -390,7 +390,7 @@ body {
 
   &__phone-image {
     position: absolute;
-    bottom: -100px;
+    bottom: -10rem;
     left: 53%;
   }
 }
@@ -400,9 +400,9 @@ body {
 
   &__image {
     display: block;
-    width: 570px;
-    height: 380px;
-    margin-right: 30px;
+    width: 57rem;
+    height: 38rem;
+    margin-right: 3rem;
   }
 }
 
@@ -410,13 +410,13 @@ body {
   flex: auto;
 
   &__item {
-    border: 1px solid $grey-3;
-    margin-bottom: 10px;
+    border: .1rem solid $grey-3;
+    margin-bottom: 1rem;
   }
 
   &__title {
-    height: 58px;
-    padding: 15px;
+    height: 5.8rem;
+    padding: 1.5rem;
     text-transform: uppercase;
     font-weight: 600;
     display: flex;
@@ -425,10 +425,10 @@ body {
   }
 
   &__image {
-    margin-right: 15px;
+    margin-right: 1.5rem;
     fill: $blue;
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
   }
 
   &__arrow {
@@ -438,10 +438,10 @@ body {
   }
 
   &__text {
-    padding: 20px 15px;
+    padding: 2rem 1.5rem;
     font-family: $roboto;
     color: $grey-2;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 300;
     font-style: italic;
     overflow-y: scroll;
@@ -451,11 +451,11 @@ body {
 
   .active {
     .accordion__title {
-      border-bottom: 1px solid $grey-3;
+      border-bottom: .1rem solid $grey-3;
     }
     .accordion__text {
       display: block;
-      max-height: 180px;
+      max-height: 18rem;
     }
 
     .accordion__arrow {
@@ -475,32 +475,32 @@ body {
 }
 
 .carousel {
-  padding: 0 20px;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
 
   &__item {
-    padding: 0 75px;
+    padding: 0 7.5rem;
     display: flex;
     align-items: center;
   }
 
   &__image {
-    width: 210px;
-    height: 210px;
+    width: 21rem;
+    height: 21rem;
     border-radius: 50%;
 
     &--speech {
-      border: 3px solid $blue;
-      padding: 40px;
-      width: 150px;
-      height: 150px;
+      border: .3rem solid $blue;
+      padding: 4rem;
+      width: 15rem;
+      height: 15rem;
     }
   }
 
   &__content {
-    margin-left: 60px;
-    font-size: 24px;
+    margin-left: 6rem;
+    font-size: 2.4rem;
   }
 
   &__quote {
@@ -508,13 +508,13 @@ body {
     font-weight: 300;
     font-family: $roboto;
     font-style: italic;
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     line-height: 1.35;
 
     &-author {
       font-family: $kaushan;
       position: relative;
-      margin-left: 70px;
+      margin-left: 7rem;
 
       &:before {
         @include line();
@@ -522,7 +522,7 @@ body {
         margin: 0;
         position: absolute;
         top: 50%;
-        left: -70px;
+        left: -7rem;
       }
     }
   }
@@ -532,11 +532,11 @@ body {
   display: inline-flex;
 
   &__item {
-    padding: 15px;
+    padding: 1.5rem;
     background: $yellow;
     display: inline-flex;
     transition: 0.3s;
-    border-right: 1px solid #f9bd87;
+    border-right: .1rem solid #f9bd87;
 
     &:last-child {
       border: none;
@@ -552,8 +552,8 @@ body {
   }
 
   &__icon {
-    width: 26px;
-    height: 26px;
+    width: 2.6rem;
+    height: 2.6rem;
     fill: $orange;
     transition: 0.3s;
   }
@@ -566,7 +566,7 @@ body {
   align-items: center;
 
   &__item {
-    height: 110px;
+    height: 11rem;
     object-fit: contain;
     transition: 0.6s;
 
@@ -619,19 +619,19 @@ body {
   }
 
   &__icon {
-    width: 30px;
-    height: 30px;
+    width: 3rem;
+    height: 3rem;
     fill: #fff;
   }
 
   &__title {
     text-transform: uppercase;
-    margin: 15px 0 10px;
+    margin: 1.5rem 0 1rem;
   }
 
   &__text {
     font-family: $roboto;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 300;
     font-style: italic;
   }
@@ -649,21 +649,21 @@ body {
   &__item {
     display: flex;
     flex: 50%;
-    padding: 35px 40px;
+    padding: 3.5rem 4rem;
     align-items: flex-start;
   }
 
   &__image {
-    margin-right: 30px;
-    width: 110px;
-    height: 110px;
+    margin-right: 3rem;
+    width: 11rem;
+    height: 11rem;
     border-radius: 50%;
   }
 
   &__name {
     font-weight: 600;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 1rem 0;
     position: relative;
 
     &:after {
@@ -671,16 +671,16 @@ body {
       background: $orange;
       position: absolute;
       left: 0;
-      bottom: -47px;
+      bottom: -4.7rem;
     }
   }
 
   &__profession {
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family: $roboto;
     font-weight: 300;
     font-style: italic;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
 }
 
@@ -689,7 +689,7 @@ body {
   justify-content: space-between;
 
   &__item {
-    width: 380px;
+    width: 38rem;
   }
 
   &__image {
@@ -698,19 +698,19 @@ body {
   }
 
   &__date {
-    width: 60px;
-    height: 70px;
+    width: 6rem;
+    height: 7rem;
     background: $blue;
     color: #fff;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 1.2rem;
 
     position: absolute;
-    left: -10px;
-    bottom: 10px;
+    left: -1rem;
+    bottom: 1rem;
 
     &--number {
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: 700;
       line-height: 1;
     }
@@ -719,58 +719,58 @@ body {
       font-family: $roboto;
       font-weight: 300;
       font-style: italic;
-      font-size: 15px;
+      font-size: 1.5rem;
     }
   }
 
   &__content {
-    margin-top: 19px;
+    margin-top: 1.9rem;
   }
 
   &__title {
     font-weight: 600;
     text-transform: uppercase;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
   }
 
   &__stats {
-    border-top: 1px solid $grey-3;
-    margin-top: 20px;
-    padding-top: 20px;
+    border-top: .1rem solid $grey-3;
+    margin-top: 2rem;
+    padding-top: 2rem;
     display: flex;
     align-items: center;
   }
 
   &__icon {
-    margin-right: 7px;
+    margin-right: .7rem;
     align-self: start;
 
     &--views {
-      width: 20px;
-      height: 12px;
+      width: 2rem;
+      height: 1.2rem;
     }
 
     &--comments {
-      width: 16px;
-      height: 15px;
+      width: 1.6rem;
+      height: 1.5rem;
     }
   }
 
   &__number {
     font-family: $roboto;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-style: italic;
     font-weight: 300;
     color: $grey-2;
 
-    margin-right: 19px;
+    margin-right: 1.9rem;
   }
 }
 
 .map {
   background: url(../images/map/background.png) center / cover no-repeat;
-  padding: 57px 0;
+  padding: 5.7rem 0;
 
   &__inner {
     display: flex;
@@ -778,16 +778,16 @@ body {
   }
 
   &__icon {
-    width: 20px;
-    height: 26px;
+    width: 2rem;
+    height: 2.6rem;
     display: block;
-    margin: 0 auto 15px;
+    margin: 0 auto 1.5rem;
     fill: $orange;
     transition: .3s;
   }
 
   &__link {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
     color: $orange;
@@ -796,7 +796,7 @@ body {
     &:after {
       @include line();
       background: $orange;
-      margin-top: 18px;
+      margin-top: 1.8rem;
       transition: .3s;
     }
 
@@ -815,14 +815,14 @@ body {
 }
 
 .footer {
-  padding-top: 74px;
+  padding-top: 7.4rem;
   background: $grey-4;
 
   &__inner {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-bottom: 70px;
+    padding-bottom: 7rem;
   }
 
   &__info {
@@ -830,33 +830,33 @@ body {
   }
 
   &__logo {
-    font-size: 46px;
+    font-size: 4.6rem;
     color: $grey-5;
-    margin-bottom: 32px;
+    margin-bottom: 3.2rem;
   }
 
   &__followers {
-    margin-top: 50px;
+    margin-top: 5rem;
     font-weight: 500;
 
     b {
-      font-size: 18px;
+      font-size: 1.8rem;
     }
   }
 
   &__social {
-    margin-top: 18px;
-    padding-top: 18px;
-    border-top: 1px solid $grey-3;
+    margin-top: 1.8rem;
+    padding-top: 1.8rem;
+    border-top: .1rem solid $grey-3;
 
     font-family: $roboto;
     font-weight: 300;
     font-style: italic;
-    font-size: 15px;
+    font-size: 1.5rem;
     color: $grey-2;
     
     &--icon {
-      height: 16px;
+      height: 1.6rem;
       margin-left: 1.3rem;
       fill: $blue;
       transition: .3s;
@@ -868,17 +868,17 @@ body {
   }
 
   &__form {
-    margin-top: 40px;
+    margin-top: 4rem;
     display: flex;
     
     &--email {
-      width: 230px;
-      height: 40px;
-      border: 1px solid $grey-3;
+      width: 23rem;
+      height: 4rem;
+      border: .1rem solid $grey-3;
       border-right: none;
-      padding-left: 13px;
+      padding-left: 1.3rem;
       font-family: $roboto;
-      font-size: 15px;
+      font-size: 1.5rem;
       
       &::placeholder {
         font-family: $roboto;
@@ -889,9 +889,9 @@ body {
     }
 
     &--submit {
-      width: 150px;
-      border: 1px solid $blue;
-      padding: 0 33px;
+      width: 15rem;
+      border: .1rem solid $blue;
+      padding: 0 3.3rem;
       background: $blue;
       text-transform: uppercase;
       font-weight: 700;
@@ -903,7 +903,7 @@ body {
   &__title {
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
   }
 
   &__blogs {
@@ -922,32 +922,32 @@ body {
     align-items: center;
 
     &:not(:first-of-type) {
-      margin-top: 30px;
+      margin-top: 3rem;
     }
   }
 
   &__image {
     display: block;
-    width: 120px;
-    height: 80px;
-    margin-right: 20px;
+    width: 12rem;
+    height: 8rem;
+    margin-right: 2rem;
   }
 
   &__content {
-    margin-top: 10px;
+    margin-top: 1rem;
   }
 
   &__title {
     display: block;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 1.2rem;
     line-height: 1.5;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   &__date {
-    font-size: 13px;
+    font-size: 1.3rem;
     color: $grey-2;
     font-family: $roboto;
     font-style: italic;
@@ -957,7 +957,7 @@ body {
 
 .instagram {
   display: flex;
-  height: 270px;
+  height: 27rem;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -966,17 +966,17 @@ body {
   }
 
   &__image {
-    width: 88px;
-    height: 88px;
+    width: 8.8rem;
+    height: 8.8rem;
   }
 
   &__link {
     font-family: $roboto;
-    font-size: 13px;
+    font-size: 1.3rem;
     font-style: italic;
     font-weight: 300;
     display: block;
-    margin-top: 20px;
+    margin-top: 2rem;
 
     &:hover {
       text-decoration: underline;
@@ -985,18 +985,20 @@ body {
 }
 
 .copyright {
-  padding: 25px 0;
+  padding: 2.5rem 0;
   display: flex;
   justify-content: center;
-  border-top: 1px solid $grey-3;
+  border-top: .1rem solid $grey-3;
   font-weight: 600;
 
   &__link {
     color: $orange;
-    margin-left: 5px;
+    margin-left: .5rem;
 
     &:hover {
       text-decoration: underline;
     }
   }
 }
+
+@import "_responsive";
