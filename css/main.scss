@@ -77,10 +77,9 @@ body {
 
   &__item {
     display: inline-block;
-    text-transform: uppercase;
     margin: 0 2.5rem;
-    text-transform: uppercase;
     transition: 0.3s;
+    text-transform: uppercase;
     position: relative;
 
     &--icon {

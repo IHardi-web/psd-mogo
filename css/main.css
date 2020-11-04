@@ -158,11 +158,10 @@ body {
 
 .nav__item {
   display: inline-block;
-  text-transform: uppercase;
   margin: 0 2.5rem;
-  text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-transform: uppercase;
   position: relative;
 }
 
