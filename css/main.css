@@ -84,7 +84,7 @@ input {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: inherit;
 }
 
 ::-webkit-scrollbar-track {
@@ -121,12 +121,11 @@ body {
 .header {
   width: 100%;
   height: 100vh;
-  min-height: 75rem;
+  min-height: 72rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#f38181), to(#fce38a));
   background: linear-gradient(to bottom, #f38181, #fce38a);
   background: url("../images/header/background.png") top/cover no-repeat;
   color: #fff;
-  margin-bottom: -2.4rem;
 }
 
 .header__inner {
@@ -141,7 +140,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
-  min-height: 75rem;
+  min-height: 72rem;
 }
 
 .nav {
@@ -217,6 +216,12 @@ body {
   fill: #fce38a;
 }
 
+.nav__burger {
+  display: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
 .intro {
   width: 100%;
   max-width: 90rem;
@@ -288,10 +293,6 @@ body {
   position: relative;
 }
 
-.slider__item b {
-  font-size: 2.4rem;
-}
-
 .slider__item.active {
   opacity: 1;
 }
@@ -305,6 +306,11 @@ body {
   left: 0;
   top: -0.3rem;
   z-index: 2;
+}
+
+.slider__number {
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .section {
@@ -1348,27 +1354,47 @@ body {
   text-decoration: underline;
 }
 
-@media (max-width: 576px) {
-  .container {
-    max-width: 540px;
+@media (max-width: 596px) {
+  .nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .nav__list {
+    display: none;
+  }
+  .nav__burger {
+    display: inline-block;
+  }
+  .slider__name {
+    display: none;
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    max-width: 720px;
+@media (max-width: 798px) {
+  .nav__item {
+    margin-left: 1.8rem;
+  }
+  .slider__item {
+    font-size: 1.4rem;
+  }
+  .slider__item__number {
+    font-size: 2rem;
   }
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 960px;
+@media (max-width: 1022px) {
+  .intro__suptitle {
+    font-size: 7.2vw;
+  }
+  .intro__title {
+    font-size: 15vw;
   }
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1140px;
+@media (max-width: 1230px) {
+  body {
+    background: #000;
   }
 }
 /*# sourceMappingURL=main.css.map */

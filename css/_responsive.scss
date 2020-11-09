@@ -1,23 +1,62 @@
-@media (max-width: 576px) {
-  .container {
-    max-width: 540px;
+$xl: 1230px;
+$lg: 1022px;
+$md: 798px;
+$sm: 596px;
+// default bootstrap breakpoints + padding
+
+@media (max-width: $sm) {
+  .nav {
+    align-items: center;
+
+    &__list {
+      display: none;
+    }
+
+    &__burger {
+      display: inline-block;
+    }
+  }
+
+  .slider {
+    &__name {
+      display: none;
+    }
   }
 }
 
-@media (max-width: 768px) {
-  .container {
-    max-width: 720px;
+@media (max-width: $md) {
+  .nav {
+    &__item {
+      margin-left: 1.8rem;
+    }
+  }
+
+  .slider {
+    &__item {
+      font-size: 1.4rem;
+
+      &__number {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 960px;
+@media (max-width: $lg) {
+
+  .intro {
+    &__suptitle {
+      font-size: 7.2vw;
+    }
+    &__title {
+      font-size: 15vw;
+    }
   }
 }
 
-@media (max-width: 1200px) {
-  .container {
-    max-width: 1140px;
+@media (max-width: $xl) {
+  body {
+    background: #000;
   }
+
 }
