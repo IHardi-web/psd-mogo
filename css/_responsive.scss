@@ -1,10 +1,90 @@
-$xl: 1230px;
-$lg: 1022px;
-$md: 798px;
-$sm: 596px;
+$lg: 1200px;
+$md: 922px;
+$sm: 768px;
+$xs: 576px;
 // default bootstrap breakpoints + padding
 
+
+@media (max-width: $lg) {
+  
+
+
+}
+
+@media (max-width: $md) {
+  .nav {
+    &__item {
+      margin-left: 4.5rem;
+    }
+  }
+
+  .intro {
+    &__suptitle {
+      font-size: 7.2vw;
+    }
+    &__title {
+      font-size: 15vw;
+    }
+  }
+
+  .statistics {
+    &__inner { 
+      justify-content: center;
+      flex-wrap: wrap;
+      max-height: 100%;
+    }
+
+    &__item {
+      width: 33%;
+      margin-bottom: 0;
+      padding: 2rem 0;
+      border-bottom: 1px solid #b5eae0;
+
+      &:nth-child(3) {
+        border-right: 1px solid #b5eae0;
+      }
+
+      &:nth-child(4), &:nth-child(5) {
+        width: 50%;
+      }
+    }
+  }
+
+  
+}
+
 @media (max-width: $sm) {
+  .nav {
+    &__item {
+      margin-left: 1.5rem;
+    }
+  }
+
+  .slider {
+    &__item {
+      font-size: 1.4rem;
+
+      &__number {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .card {
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &__item {
+      width: 100%;
+      max-width: 380px;
+      margin-top: 15px;
+    }
+  }
+
+
+}
+
+@media (max-width: $xs) {
   .nav {
     align-items: center;
 
@@ -21,42 +101,29 @@ $sm: 596px;
     &__name {
       display: none;
     }
-  }
-}
 
-@media (max-width: $md) {
-  .nav {
-    &__item {
-      margin-left: 1.8rem;
+    &__item.active:after {
+      width: 50%;
     }
   }
 
-  .slider {
-    &__item {
-      font-size: 1.4rem;
+  .statistics {
+    &__inner {
+      align-items: stretch;
+    }
 
-      &__number {
-        font-size: 2rem;
+    &__item {
+      width: 50%;
+
+      &:nth-child(2), &:nth-child(4) {
+        border-right: 1px solid #b5eae0;
+      }
+
+      &:nth-child(3) {
+        border-right: none;
       }
     }
   }
-}
 
-@media (max-width: $lg) {
-
-  .intro {
-    &__suptitle {
-      font-size: 7.2vw;
-    }
-    &__title {
-      font-size: 15vw;
-    }
-  }
-}
-
-@media (max-width: $xl) {
-  body {
-    background: #000;
-  }
 
 }

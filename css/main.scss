@@ -148,8 +148,14 @@ body {
   }
 
   &__burger {
+    font-size: 2.8rem;
     display: none;
     transform: rotate(90deg);
+    transition: .3s;
+
+    &:hover {
+      color: $yellow;
+    }
   }
 }
 
@@ -284,6 +290,12 @@ body {
 .card {
   display: flex;
   justify-content: space-between;
+  margin: 0 -15px;
+
+  &__item {
+    margin: 0 15px;
+  }
+
 
   &__inner {
     position: relative;
@@ -309,8 +321,9 @@ body {
     transition: 0.3s;
 
     img {
-      max-width: 380px;
-      width: 100%;
+      display: block;
+      // width: 380px;
+      max-width: 100%;
       height: auto;
       transition: 0.3s;
     }
@@ -366,17 +379,15 @@ body {
   }
 
   &__item {
-    border-left: .1rem solid #b5eae0;
-
+    border-left: 1px solid #b5eae0;
     width: 24rem;
-    margin: 0 auto;
+    margin: 0 auto 2.4rem;
     padding: 9rem 0;
-    margin-bottom: 2.5rem;
     text-align: center;
     color: #fff;
 
     &:last-child {
-      border-right: .1rem solid #b5eae0;
+      border-right: 1px solid #b5eae0;
     }
   }
 
